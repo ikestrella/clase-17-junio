@@ -1,19 +1,19 @@
 Original:
 
-![alt text](image.png)
+![alt text](./imagenes/image.png)
 
 
 Con Jazzmin:
 
-![alt text](image-1.png)
+![alt text](./imagenes/image-1.png)
 
 
 Mejorado:
 
-![alt text](image-2.png)
+![alt text](./imagenes/image-2.png)
 
 
-![alt text](image-3.png)
+![alt text](./imagenes/image-3.png)
 
 
-![alt text](image-4.png)
+![alt text](./imagenes/image-4.png)
