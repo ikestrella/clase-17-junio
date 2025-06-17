@@ -125,18 +125,42 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 JAZZMIN_SETTINGS = {
+    "site_title": "Inscripciones",
+    "site_header": "Inscripciones",
+    "site_brand": "Inscripciones",
+
+    "welcome_sign": "Welcome to the Inscripciones Admin",
+    "copyright": "Acme Inscripciones Ltd",
+
+    "search_model": ["app1.Curso", "app1.Estudiante", "app1.Instructor"],
+
     "topmenu_links": [
 
         # Url that gets reversed (Permissions can be added)
         {"name": "Home",  "url": "admin:index", "permissions": ["auth.view_user"]},
 
         # external url that opens in a new window (Permissions can be added)
-        {"name": "Support", "url": "https://github.com/farridav/django-jazzmin/issues", "new_window": True},
+        {"name": "Repository", "url": "https://github.com/ikestrella/clase-17-junio.git", "new_window": True},
 
         # model admin to link to (Permissions checked against model)
         {"model": "auth.User"},
 
         # App with dropdown menu to all its models pages (Permissions checked against models)
-        {"app": "books"},
+        {"app": "app1"},
     ],
+
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "icons": {
+        "auth.User": "fas fa-users",
+        "auth.Group": "fas fa-users-cog",
+        "app1.Departamento": "fas fa-building",
+        "app1.Instructor": "fas fa-chalkboard-teacher",
+        "app1.Curso": "fas fa-book",
+        "app1.Estudiante": "fas fa-user-graduate",
+        "app1.Inscripcion": "fas fa-clipboard-list",
+        "app1.Tarea": "fas fa-tasks",
+        "app1.Entrega": "fas fa-file-alt",
+    },
+
 }
